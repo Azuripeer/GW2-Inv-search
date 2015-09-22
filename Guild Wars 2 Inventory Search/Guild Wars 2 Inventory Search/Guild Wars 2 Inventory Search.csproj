@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>ftp://ftp.xs4all.nl/WWW/gw2/</PublishUrl>
+    <PublishUrl></PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>http://nvdveen0.home.xs4all.nl/gw2/</InstallUrl>
+    <InstallUrl></InstallUrl>
     <ProductName>Guild Wars 2 Inventory Search</ProductName>
     <PublisherName>Erin van der Veen</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
