@@ -76,7 +76,7 @@ namespace Guild_Wars_2_Inventory_Search
                     itemList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
                 }));
             }
-            catch { };
+            catch { MessageBox.Show("Test"); };
         }
 
         public void refreshButton_Click(object sender, EventArgs e)
@@ -95,10 +95,11 @@ namespace Guild_Wars_2_Inventory_Search
         private void addNames(int from)
         {
             string query = "https://api.guildwars2.com/v2/items?ids=";
-            for (int i = from; i < ids.Count && i - from <= 200; i++ )
+            for (int i = from; i < ids.Count - 1 && i - from <= 199; i++ )
             {
                 query += ids[i].id + ",";
             }
+            query = query.TrimEnd(',');
             List<Name> names = JsonConvert.DeserializeObject<List<Name>>((new WebClient()).DownloadString(query));
             for (int i = from; i < ids.Count && i - from <= 200; i++)
             {
